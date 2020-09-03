@@ -1,0 +1,85 @@
+.profile-aside {
+  width: 264px;
+  flex-shrink: 0;
+
+  &__name-wrp {
+    background-color: var(--color-base);
+    border-radius: 10px;
+    padding: 24px 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__avatar {
+    margin-right: 16px;
+    width: 60px;
+    height: 60px;
+    border-radius: 999px;
+    background-color: var(--color-bg-surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__name {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-base-dark);
+  }
+
+  &__nav {
+    margin: 10px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--color-base)f;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: var(--color-purple);
+    color: var(--color-base);
+
+    path {
+      fill: var(--color-base);
+    }
+
+    &:after {
+      content: '';
+      width: 216px;
+      height: 1px;
+      background-color: var(--color-bg-surface);
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    svg {
+      margin-right: 16px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__logout {
+    background-color: var(--color-base);
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    color: var(--color-red);
+    font-size: 14px;
+    font-weight: 400;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 16px;
+      fill: var(--color-red);
+    }
+  }
+}

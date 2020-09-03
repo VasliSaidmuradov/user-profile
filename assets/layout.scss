@@ -1,0 +1,30 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+  &-content {
+    flex-grow: 1;
+  }
+}
+
+.container {
+  position: relative;
+  max-width: 1128px;
+  width: 100%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-col {
+  width: 240px;
+}
+
+.right-col {
+  width: 840px;
+}

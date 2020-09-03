@@ -1,0 +1,39 @@
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  &__container {
+    max-width: 1320px;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__signin {
+    display: flex;
+    padding: 10px;
+    color: var(--color-purple);
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+    background-color: var(--color-purple);
+
+    svg {
+      fill: var(--color-base);
+    }
+
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+  }
+}
